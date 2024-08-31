@@ -19,7 +19,8 @@ nav{
     align-items: center;
     justify-content:space-between;
     flex-wrap: wrap;
-    padding-left: 80px;
+    padding-top: 10px;
+    padding-left: 100px;
     background-color: none;
     position: fixed;
     margin-top: -10px;
@@ -43,7 +44,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 25px;
     margin-right: 0px;
-    padding-left: 50px;
+    padding-left: 0px;
     color: white;
     font-family: Arial;
     font-weight: bold;
