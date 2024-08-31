@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/064a39e9f2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="D:\Portfolio\logoo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#About">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi,<br>I'm <span>RAJKUMAR</span></h1>
+                <p>Full stack Developer</p>
+            </div>
+        </div>
+    </div>
+    <div id="About">
+        <div class="container">
+            <div  class="row">
+                <div class="cl1"> <!-- -----col-1-------- -->
+                    <img src="D:\Portfolio\imagee.png">
+                </div>
+                <div class="cl2"> <!-----col2-->
+                    <h1 class=>About Me</h1>
+                    <p>⚪&nbsp;Motivated and Eager Junior Fullstack Developer with strong desire to learn and grow in the tech industry.<br><br>
+                        ⚪&nbsp;Proficient in creating responsive and dynamic web application using HTML,CSS,JavaScript, and modern framework like React.<br><br>
+                        ⚪&nbsp;Basic knowledge of backend development with Node.js and database management with MYSQL and MongoDB.<br><br>
+                        ⚪&nbsp;Committed to developing high-quality, user-friendly software solutions and continuously improving my skills. 
+                    </p>
+
+                    <div class="s-title">
+                        <h5 class="tab-links active-link" onclick="opentab('education')"><a>Education</a></h5>
+                        <h5 class="tab-links" onclick="opentab('Languages')"><a>Languages</a></h5>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>Higher and Higher Secondary Education ( 2019-2021 )</span><p>St.Mary's Higher Secondary School, Dindigul.</p></li><br>
+                        <li><span>Bachelor of Technology in Information Technology ( 2021-2025 )</span><p>Pursuing in PSNA College of Engineering and Technology, Dindigul.</p></li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="Languages">
+                    <ul>
+                        <li><span>Tamil</span> -
+                            Fluent</li><br>
+                            <li><span>English</span> -
+                            Intermediate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <section id="skills">
+        <div class="skills">
+            <h2>Skills</h2>
+            <div class="tab-skills">
+                <p class="skill-col skill-link"onclick="tab('frontend')">FrontEnd</p>
+                <p class="skill-col"onclick="tab('backend')">BackEnd</p>
+                <p class="skill-col"onclick="tab('databases')">DataBases</p>
+            </div>
+
+            <div class="skill-col-1 active-skill"id="frontend">
+                <div class="skill">
+                        <img src="html.png"alt="HTML">
+                    <div class="description">I have acquried 90% advanced in HTML,
+                        including understanding elements and attributes,forms.
+                    </div>
+                </div>
+                <div class="skill">
+                        <img src="css.jpg"alt="CSS">
+                    <div class="description">I have acquried 90% advanced in CSS,
+                        including understanding selectors,properties and animation.
+                    </div>
+                </div>
+                <div class="skill">
+                        <img src="js.png"alt="JavaScript">
+                    <div class="description">I have acquried 80% advanced in JavaScript,
+                        covering core concept like functions,DOM manipulation and Event Handling.
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-col-1"id="backend">
+                <div class="skill">
+                    <img src="java.png"alt="java">
+                    <div class="description">I have acquried 70% Intermediate in Java, 
+                        focusing on foundational concepts such as classes,objects 
+                        and inheritance </div>
+                </div>
+                <div class="skill">
+                    <img src="python.jpg"alt="python">
+                    <div class="description">I have aquried 50% Intermediate in Python,
+                        covering basics syntax,datatypes,control flow. </div>
+                </div>
+            </div>
+
+            <div class="skill-col-1"id="databases">
+                <div class="skill">
+                    <img src="sql3.jpg"alt="SQL">
+                    <div class="description">I have acquried 50% Intermediate in SQL,
+                        understanding basic queries,data retrieval,joins.
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <section id="projects">
+        <h1>My Projects</h1>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <img src="login.png" alt="login" class="projectImage" data-title="Login Page" data-description="Developed a responsive 
+                and user-friendly login page using HTML and CSS.Implemented basic validation and interactive elements using JavaScript. 
+                Focused on creating a clean and intuitive interface to enhance user experience." data-image="login.png">
+                <div class="info">
+                    <h2>LoginPage<br>Development</h2>    
+                </div>
+            </div>
+
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <img id="data-image"  src="login.png" alt="login">
+                    <h2 id="data-title">LoginPage</h2>
+                    <p id="data-description">Developed a responsive and user-friendly login page using HTML and CSS. 
+                        Implemented basic validation and interactive elements using JavaScript. 
+                        Focused on creating a clean and intuitive interface to enhance user experience.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="weather.png" alt="weather" class="projectImage" data-title="Weather App" data-description="I developed
+                a basic weather app that provides current 
+                weather information based on the user's location. 
+                This project demonstrates my ability to integrate external APIs and build dynamic, 
+                interactive web applications. The app features a clean and intuitive interface, 
+                displaying real-time weather data such as temperature, 
+                humidity, and weather conditions." data-image="weather.png">
+                <div class="info">
+                    <h2>Weather<br>App</h2>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="atm.png" alt="atm" class="projectImage"data-title="ATM Machine" data-description="I developed an ATM
+                machine simulation program in Java, which allows users to perform 
+                basic banking operations such as checking their balance,depositing money,and withdrawing 
+                funds." data-image="atm.png">
+                <div class="info">
+                    <h2>ATM<br>Machine</h2>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="cal.png" alt="cal" class="projectImage"data-title="Calculator" data-description="I created a Calculator app using HTML, 
+                CSS and JavaScript,
+                which performs
+                all the arithmetic operations" data-image="cal.png">
+                <div class="info">
+                    <h2>Calculator<br>App</h2>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="s-title">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;kumarraj10112003@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>&nbsp;&nbsp;9344097850</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/.kxmax.?igsh=MTQ5ZzUwcnlqcmYzbA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/raj-kumar-r-84786923a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
